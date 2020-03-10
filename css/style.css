@@ -2,6 +2,11 @@ html {
     font-size: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
 header {
     background-image: url('../images/image-main.jpeg');
     background-size: cover;
@@ -21,7 +26,7 @@ header {
 }
 
 .titlewrapper h1 {
-    font-size: 60px;
+    font-size: 6.8rem;
     color: #333333;
     font-weight: 700;
     padding-top: 30vh;
@@ -62,10 +67,19 @@ header {
     border-radius: 5px;
 }
 
+.titlewrapper > a:nth-child(5):hover {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    padding: 2vh;
+    background-color: rgb(126, 250, 246);
+    border-radius: 5px;
+}
+
 .titlewrapper > .break {
     flex-basis: 100%;
     height: 0;
-  }
+}
 
 section {
     margin-right: 10vw;
@@ -73,7 +87,7 @@ section {
     margin-bottom: 10vh;
 }
 
-.section-wrapper{
+.section-wrapper {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -129,7 +143,7 @@ section {
     justify-content: center;
     flex-basis: 33%;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 2.2em;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -142,7 +156,7 @@ section {
     justify-content: center;
     width: 100%;
     flex-basis: 34%;
-    font-size: 2.5em;
+    font-size: 3.9rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #333333;
@@ -156,8 +170,24 @@ section {
     background-color: #16D6D1;
     border-radius: 5px;
     padding: 10px 10px;
-    font-size: 1em;
+    font-size: 1.9rem;
     font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    color: #333333;
+}
+
+.text-child-3:hover {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(126, 250, 246);
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     color: #333333;
 }
@@ -184,7 +214,7 @@ footer {
     padding-top: 10vh;
 }
 
- .footer-wrapper {
+.footer-wrapper {
     margin-right: 10vw;
     margin-left: 10vw;
     height: 40vh;
@@ -251,8 +281,9 @@ footer {
     text-transform: uppercase;
 }
 
-.flex-column > li:nth-child(n+2) {
-    display: flex;padding: 10%;
+.flex-column > li:nth-child(n+1) {
+    display: flex;
+    padding: 5%;
     font-size: 1.9rem;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
